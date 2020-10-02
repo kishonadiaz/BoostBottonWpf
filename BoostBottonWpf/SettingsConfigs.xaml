@@ -1,0 +1,296 @@
+﻿<Window
+    x:Class="BoostBottonWpf.SettingsConfigs"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:BoostBottonWpf"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+    x:Name="SettingWin"
+    Title="Settings"
+    Width="373.104"
+    Height="292.325"
+    Activated="SettingWin_Activated"
+    Closed="SettingWin_Close"
+    Closing="SettingWin_Closing"
+    Loaded="SettingWin_Load"
+    MouseEnter="SettingWin_MouseEntered"
+    MouseLeave="SettingWin_MouseLeave"
+    MouseMove="SettingWin_MouseMove"
+    WindowStartupLocation="Manual"
+    WindowStyle="ToolWindow"
+    mc:Ignorable="d">
+
+
+
+    <Window.Resources>
+        <!--<BlurEffect x:Name="blureffect" />
+        <BlurEffect x:Name="reset" Radius="0" />-->
+    </Window.Resources>
+    <Grid Background="#FFE0E0E0">
+        <CheckBox
+            x:Name="Traymode"
+            Uid="&quot;traymode&quot;"
+            Width="108"
+            Height="21"
+            Margin="10,15,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Checked="Startintray_Checked"
+            Content="Tray Mode"
+            Unchecked="Startintray_Checked" />
+        <Button
+            x:Name="Save_Btn"
+            Width="50"
+            Height="23"
+            Margin="243,220,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="Gainsboro"
+            BorderBrush="#FF159B27"
+            Click="Save_Btn_Click"
+            Content="Save"
+            Foreground="#FF159B27" />
+        <Button
+            x:Name="Cancel_Btn"
+            Width="50"
+            Height="23"
+            Margin="298,220,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            BorderBrush="#FF8F0F0F"
+            Click="Cancel_Btn_Click"
+            Content="Cancel"
+            Foreground="#FF8F0F0F" />
+        <CheckBox
+            x:Name="startintray"
+            Uid="&quot;startintray&quot;"
+            Width="144"
+            Height="18"
+            Margin="10,41,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Checked="startintray_Checked_1"
+            Content="Start InTray"
+            Unchecked="startintray_Checked_1" />
+        <CheckBox
+            x:Name="StartTimer"
+            Width="95"
+            Height="17"
+            Margin="10,64,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Checked="StartTimer_Checked"
+            Content="Start Timer"
+            IsChecked="True"
+            Unchecked="StartTimer_Checked" />
+
+        <WrapPanel
+            Width="357"
+            Height="117"
+            Margin="10,86,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top">
+            <WrapPanel
+                x:Name="timebox"
+                Width="338"
+                Height="56"
+                VerticalAlignment="Top">
+                <Grid
+                    x:Name="timergrid"
+                    Width="338"
+                    Height="56"
+                    RenderTransformOrigin="0.5,0.5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform />
+                            <SkewTransform />
+                            <RotateTransform Angle="0.143" />
+                            <TranslateTransform />
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <CheckBox
+                        x:Name="StartTimeCheckBox"
+                        Width="155"
+                        Height="18"
+                        Margin="6,30,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Checked="StartTimeCheckBox_Checked"
+                        Unchecked="StartTimeCheckBox_Checked">
+                        <Grid x:Name="starttimergrid" Width="135">
+                            <Grid.Effect>
+                                <BlurEffect x:Name="startgridblureffect" />
+                            </Grid.Effect>
+                            <ComboBox
+                                x:Name="StartAmPm"
+                                Height="19"
+                                Margin="82,0,0,0"
+                                VerticalAlignment="Top"
+                                Background="{x:Null}"
+                                BorderBrush="{x:Null}"
+                                SelectedIndex="0"
+                                SelectionChanged="StartAmPm_SelectionChanged">
+                                <ComboBoxItem
+                                    Width="50"
+                                    HorizontalAlignment="Left"
+                                    Content="AM" />
+                                <ComboBoxItem
+                                    Width="50"
+                                    HorizontalAlignment="Left"
+                                    Content="PM" />
+                            </ComboBox>
+                            <ComboBox
+                                x:Name="starthour"
+                                Width="41"
+                                Height="19"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                SelectionChanged="starthour_SelectionChanged" />
+                            <ComboBox
+                                x:Name="startmin"
+                                Width="41"
+                                Height="19"
+                                Margin="41,0,0,0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                RenderTransformOrigin="0.122,0.579"
+                                SelectionChanged="startmin_SelectionChanged" />
+                            <Rectangle
+                                x:Name="starttimefaderec"
+                                Height="19"
+                                VerticalAlignment="Bottom"
+                                Fill="#FFF4F4F5"
+                                Opacity="0.5"
+                                Stroke="Black" />
+
+                        </Grid>
+                    </CheckBox>
+
+                    <Label
+                        Width="68"
+                        Height="23"
+                        Margin="6,1,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Content="Start Time" />
+                    <Label
+                        Width="74"
+                        Height="24"
+                        Margin="161,1,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Content="End Time" />
+                    <CheckBox
+                        x:Name="EndTimeCheckBox"
+                        Width="157"
+                        Height="18"
+                        Margin="166,30,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Checked="EndTimeCheckBox_Checked"
+                        Unchecked="EndTimeCheckBox_Checked">
+                        <Grid x:Name="endtimergrid" Width="131">
+                            <Grid.Effect>
+                                <BlurEffect x:Name="endgridblureffect" />
+                            </Grid.Effect>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0*" />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <ComboBox
+                                x:Name="EndAmPm"
+                                Grid.RowSpan="2"
+                                Height="19"
+                                Margin="86,0,0,0"
+                                VerticalAlignment="Top"
+                                Background="{x:Null}"
+                                BorderBrush="{x:Null}"
+                                SelectedIndex="0"
+                                SelectionChanged="EndAmPm_SelectionChanged">
+                                <ComboBoxItem
+                                    Width="50"
+                                    HorizontalAlignment="Left"
+                                    Content="AM" />
+                                <ComboBoxItem
+                                    Width="50"
+                                    HorizontalAlignment="Left"
+                                    Content="PM" />
+                            </ComboBox>
+                            <ComboBox
+                                x:Name="endhour"
+                                Grid.RowSpan="2"
+                                Width="42"
+                                Height="19"
+                                Margin="2,0,0,0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                SelectionChanged="endhour_SelectionChanged" />
+                            <ComboBox
+                                x:Name="endmin"
+                                Grid.RowSpan="2"
+                                Width="42"
+                                Height="19"
+                                Margin="44,0,0,0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                RenderTransformOrigin="-0.266,0.636"
+                                SelectionChanged="endmin_SelectionChanged" />
+                            <Rectangle
+                                x:Name="endfadeoffbec"
+                                Grid.RowSpan="2"
+                                Width="131"
+                                Height="19"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                Fill="#FFF4F4F5"
+                                Opacity="0.5"
+                                Stroke="Black" />
+                        </Grid>
+                    </CheckBox>
+
+
+
+                </Grid>
+            </WrapPanel>
+            <Grid Height="62">
+                <CheckBox
+                    x:Name="DialogClosecheck"
+                    Uid="&quot;allwayclose&quot;"
+                    Width="156"
+                    Height="18"
+                    Margin="0,29,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Checked="DialogClosecheck_Checked"
+                    Content="Do not show close dialog"
+                    RenderTransformOrigin="0.5,0.5"
+                    TextOptions.TextFormattingMode="Display"
+                    Unchecked="DialogClosecheck_Checked">
+                    <CheckBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform />
+                            <SkewTransform AngleX="-0.227" />
+                            <RotateTransform />
+                            <TranslateTransform X="0.004" />
+                        </TransformGroup>
+                    </CheckBox.RenderTransform>
+                </CheckBox>
+                <CheckBox
+                    x:Name="Notifications"
+                    Width="118"
+                    Margin="0,5,38,37"
+                    Checked="Notifications_Checked"
+                    Content="Notifications"
+                    Unchecked="Notifications_Checked" />
+            </Grid>
+
+        </WrapPanel>
+        <!--<CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="21" Margin="10,62,0,0" VerticalAlignment="Top" Width="108" Checked="CheckBox_Checked_1"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="21" Margin="10,88,0,0" VerticalAlignment="Top" Width="108"/>-->
+
+    </Grid>
+</Window>

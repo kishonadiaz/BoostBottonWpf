@@ -1,0 +1,6 @@
+MainPackage=C:\Users\kishon diaz\source\repos\BoostBottonWpf\BoostMode\bin\x64\Release\BoostMode_1.0.8.0_x64.msix
+SymbolPackage=C:\Users\kishon diaz\source\repos\BoostBottonWpf\BoostMode\obj\x64\Release\Symbols\BoostMode_1.0.8.0_x64.appxsym
+ResourcePack=C:\Users\kishon diaz\source\repos\BoostBottonWpf\BoostMode\bin\x64\Release\BoostMode_1.0.8.0_scale-100.msix
+ResourcePack=C:\Users\kishon diaz\source\repos\BoostBottonWpf\BoostMode\bin\x64\Release\BoostMode_1.0.8.0_scale-125.msix
+ResourcePack=C:\Users\kishon diaz\source\repos\BoostBottonWpf\BoostMode\bin\x64\Release\BoostMode_1.0.8.0_scale-150.msix
+ResourcePack=C:\Users\kishon diaz\source\repos\BoostBottonWpf\BoostMode\bin\x64\Release\BoostMode_1.0.8.0_scale-400.msix

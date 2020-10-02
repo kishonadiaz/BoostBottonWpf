@@ -1,0 +1,24 @@
+﻿<Window x:Name="HelpWin"
+    x:Class="BoostBottonWpf.Help"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:BoostBottonWpf"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Help"
+    Width="800"
+    Height="624.45"
+    Background="White"
+    ResizeMode="NoResize"
+    WindowStyle="ToolWindow"
+    mc:Ignorable="d" Loaded="HelpWIn_Loaded" Activated="HelpWIn_Activated" Closing="HelpWin_Closing">
+    <Grid>
+        <WebBrowser
+            x:Name="browser"
+            Width="794"
+            Height="595"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+
+    </Grid>
+</Window>

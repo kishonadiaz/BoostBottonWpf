@@ -1,0 +1,65 @@
+﻿<Window
+    x:Class="BoostBottonWpf.CloseConfirm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:BoostBottonWpf"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="closeConfirm"
+    Title="CloseConfirm"
+    Width="293.75"
+    Height="187.501"
+    Activated="CloseConfirm_Activated"
+    Closing="CloseConfirm_Closing"
+    WindowStyle="ToolWindow"
+    mc:Ignorable="d" MouseEnter="CloseConfirm_MouseEnter" MouseLeave="CloseConfirm_MouseLeave" MouseMove="CloseConfirm_MouseMove">
+    <Grid Margin="0,0,0,-2" Background="#FFD1D1D1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="0*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock
+            Width="248"
+            Height="33"
+            Margin="30,22,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Are you sure you want to close!"
+            TextWrapping="Wrap" />
+        <Button
+            x:Name="YesBtn"
+            Width="85"
+            Height="45"
+            Margin="41,60,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="#FFC9C9C9"
+            BorderBrush="#FF1C6301"
+            Click="YesBtn_Click"
+            Content="Yes"
+            Foreground="#FF1C6301" />
+        <Button
+            x:Name="NoBtn"
+            Width="85"
+            Height="45"
+            Margin="162,60,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="#FFC9C9C9"
+            BorderBrush="#FF890404"
+            Click="NoBtn_Click"
+            Content="No"
+            Foreground="#FF890404" />
+        <CheckBox
+            x:Name="NeverShowcheck"
+            Width="139"
+            Height="19"
+            Margin="10,122,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Checked="NeverShow_Checked"
+            Content="Never show this again"
+            Unchecked="NeverShow_Checked" />
+
+    </Grid>
+</Window>

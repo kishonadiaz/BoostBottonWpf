@@ -1,0 +1,559 @@
+﻿       This a text file of unused code that code be usefull to me 
+       
+       
+       
+       /*
+       
+       
+       public class Test
+        {
+            
+            public static Dictionary<String,dynamic> Get
+            {
+                get;
+                set;
+            }
+            public static Object AddProp
+            {
+                get;
+                set;
+            }
+            public static String Key
+            {
+                get;
+                set;
+            }
+            public static int Index
+            {
+                get;set;
+            }
+            public Object tester(Dictionary<int,Object> s)
+            {
+                foreach(var i in s.Keys)
+                {
+                    return Get[Key]["get"][Index];
+                }
+                return s;
+            }
+
+            *//*public new static dynamic getVal(int index)
+            {
+               
+
+            }*//*
+        }*//*
+        public class Test
+        {
+            
+            public static Dictionary<String,dynamic> Get
+            {
+                get;
+                set;
+            }
+            public static Object AddProp
+            {
+                get;
+                set;
+            }
+            public static String Key
+            {
+                get;
+                set;
+            }
+            public static int Index
+            {
+                get;set;
+            }
+            public Object tester(Dictionary<int,Object> s)
+            {
+                foreach(var i in s.Keys)
+                {
+                    return Get[Key]["get"][Index];
+                }
+                return s;
+            }
+
+            *//*public new static dynamic getVal(int index)
+            {
+               
+
+            }*//*
+        }*//*
+        public class Test
+        {
+            
+            public static Dictionary<String,dynamic> Get
+            {
+                get;
+                set;
+            }
+            public static Object AddProp
+            {
+                get;
+                set;
+            }
+            public static String Key
+            {
+                get;
+                set;
+            }
+            public static int Index
+            {
+                get;set;
+            }
+            public Object tester(Dictionary<int,Object> s)
+            {
+                foreach(var i in s.Keys)
+                {
+                    return Get[Key]["get"][Index];
+                }
+                return s;
+            }
+
+            *//*public new static dynamic getVal(int index)
+            {
+               
+
+            }*//*
+        }*/
+
+
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           /*
+                        dynamic test(int index)
+                        {
+                            return index;
+                        }*/
+
+            /*var s = new ExpandoObject();*/
+           
+           
+           
+           
+           /*  Func<dynamic> getVal(int x) = x => x{ return x };
+
+              base["getval"] = delegate (int index)
+              {
+                  innerfoo = true;
+                  return Json[this.KEY[key]]["get"][index];
+              }
+
+            
+  */
+
+            //outs["gedt"] = s;
+            /*s.gets.AddProp(Json);
+            outs.Add("getc",s);*/
+
+
+            https://stackoverflow.com/questions/753921/polygon-boundary-not-matching-visual-on-a-canvas-with-a-scaletransform
+            <Canvas
+            Width="612"
+            Height="480"
+            Margin="-207,-189,-243,-103"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top">
+            <!--<Canvas.RenderTransform>
+                <ScaleTransform ScaleX="2000" ScaleY="2000" />
+            </Canvas.RenderTransform>
+            <Polygon Canvas.Left="0.1" Canvas.Top="0.1">
+                <Polygon.Resources>
+                    <Style TargetType="Polygon">
+                        <Setter Property="Fill" Value="HotPink" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Fill" Value="LimeGreen" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Polygon.Resources>
+                <Polygon.Points>
+                    <PointCollection>
+                        <Point X="0.0" Y="0.0" />
+                        <Point X="0.1" Y="0.0" />
+                        <Point X="0.1" Y="0.1" />
+                        <Point X="0.0" Y="0.1" />
+                    </PointCollection>
+                </Polygon.Points>
+            </Polygon>-->
+            <!--<Polygon
+                Points="300,200 400,125 400, 275 300,200 "  StrokeThickness="2" Stroke="Purple" UseLayoutRounding="False" Canvas.Left="70.372" Canvas.Top="77.661" Height="276.339" Width="405.628"
+                >
+                <Polygon.Fill>
+                    <SolidColorBrush Color="Blue" Opacity=".4"></SolidColorBrush>
+                </Polygon.Fill>
+            </Polygon>-->
+        </Canvas>
+
+
+
+        
+            /*  roming = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+              if (!File.Exists(Path.Combine(roming, "BoostbtnConfig\\config.json")))
+              {
+
+                  filepath = Path.Combine(roming, "BoostbtnConfig");
+                  try
+                  {
+                      Directory.CreateDirectory(filepath);
+                      configfile = File.Create(filepath + "\\config.json");
+
+                      if (configfile.Length <= 0)
+                      {
+                          configfile.Close();
+                          StreamWriter streamWriter = new StreamWriter(filepath + "\\config.json");
+
+                          streamWriter.WriteLine("{\n" +
+                                                  "\t\"init\":True,\n" +
+                                                  "\t\"configinit\":True,\n" +
+                                                  "\t\"helpinit\":True,\n" +
+                                                  "\t\"allwayclose\":false,\n" +
+                                                  "\t\"traymode\":false,\n" +
+                                                  "\t\"startintray\":False,\n" +
+                                                  "\t\"notifications\":True,\n" +
+                                                  "\t\"timeron\":False,\n" +
+                                                  "\t\"hasstarttimer\":False,\n" +
+                                                  "\t\"hasendtimer\":False,\n" +
+                                                  "\t\"starttime\":\"9:30 AM\",\n" +
+                                                  "\t\"endtime\":\"6:30 PM\"" +
+                                                  "}");
+                          streamWriter.Close();
+                      }
+                      else
+                      {
+                          configfile.Close();
+                      }
+
+
+                  }
+                  catch (Exception e)
+                  {
+
+                      MessageBox.Show(e.Message);
+                  }
+              }
+              else
+              {
+                  if (File.Exists(Path.Combine(roming, "BoostbtnConfig\\config.json")))
+                  {
+
+                      filepath = Path.Combine(roming, "BoostbtnConfig\\config.json");
+
+                      configfile = File.Create(filepath + "\\config.json");
+
+                      if (configfile.Length <= 0)
+                      {
+                          configfile.Close();
+                          StreamWriter streamWriter = new StreamWriter(filepath + "\\config.json");
+
+                          streamWriter.WriteLine("{\n" +
+                                                  "\t\"init\":True,\n" +
+                                                  "\t\"configinit\":True,\n" +
+                                                  "\t\"helpinit\":True,\n" +
+                                                  "\t\"allwayclose\":false,\n" +
+                                                  "\t\"traymode\":false,\n" +
+                                                  "\t\"startintray\":False,\n" +
+                                                  "\t\"notifications\":True,\n" +
+                                                  "\t\"timeron\":False,\n" +
+                                                  "\t\"hasstarttimer\":False,\n" +
+                                                  "\t\"hasendtimer\":False,\n" +
+                                                  "\t\"starttime\":\"9:30 AM\",\n" +
+                                                  "\t\"endtime\":\"6:30 PM\"" +
+                                                  "}");
+                          streamWriter.Close();
+                      }
+                      else
+                      {
+                          configfile.Close();
+                      }
+
+                      try
+                      {
+                          streamReader = new StreamReader(path: filepath);
+
+                          line = streamReader.ReadLine();
+
+                          while (line != null)
+                          {
+                              ////Console.WriteLine(line);
+                              if (!line.Contains("{") || !line.Contains("}"))
+                              {
+
+                                  jsonParser.Add(line);
+                              }
+
+                              line = streamReader.ReadLine();
+
+
+                          }
+
+
+                          streamReader.Close();
+
+
+                      }
+                      catch (Exception ex)
+                      {
+
+                          MessageBox.Show("Exception: " + ex.Message);
+                      }
+                      finally
+                      {
+
+                      }
+
+                  }
+
+                  jsonParser.parse();
+
+
+
+
+                  ////Console.WriteLine(TrayMode);
+              }*/
+
+
+                         /* if (!local.Contains("BoostMode"))
+            {
+                local = s;
+            }*/
+            //MessageBox.Show(local);
+           /* if (File.Exists(new Uri(local).LocalPath.ToString()))
+            {
+                try
+                {
+                    //MessageBox.Show("sdkjfhakhdakjkskjsikfhskjlhkjslhfsdalfhsdakf");
+                    filepath = new Uri(local).LocalPath.ToString();
+
+                    int len = File.ReadAllLines(local).Length;
+
+
+
+                    streamReader = new StreamReader(path: local);
+
+                    line = streamReader.ReadLine();
+
+                    while (line != null)
+                    {
+                        ////Console.WriteLine(line);
+                        if (!line.Contains("{") || !line.Contains("}"))
+                        {
+
+                            jsonParser.Add(line);
+                            //MessageBox.Show(line);
+                        }
+
+                        line = streamReader.ReadLine();
+
+
+                    }
+
+
+                    streamReader.Close();
+
+
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Exception: " + ex.Message);
+                }
+                finally
+                {
+
+                }
+                //MessageBox.Show("skjahfkjhalkjhfdsaf");
+
+            }*/
+            //jsonParser.parse();
+
+            //MessageBox.Show("skajfkfhkjdssss");
+            /* roming = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+             if (!File.Exists(Path.Combine(roming, "BoostbtnConfig\\config.json")))
+             {
+
+                 filepath = Path.Combine(roming, "BoostbtnConfig");
+                 try
+                 {
+                     Directory.CreateDirectory(filepath);
+                     configfile = File.Create(filepath + "\\config.json");
+
+                     if (configfile.Length <= 0)
+                     {
+                         configfile.Close();
+                         StreamWriter streamWriter = new StreamWriter(filepath + "\\config.json");
+
+                         streamWriter.WriteLine("{\n" +
+                                                 "\t\"init\":True,\n" +
+                                                 "\t\"configinit\":True,\n" +
+                                                 "\t\"helpinit\":True,\n" +
+                                                 "\t\"allwayclose\":false,\n" +
+                                                 "\t\"traymode\":false,\n" +
+                                                 "\t\"startintray\":False,\n" +
+                                                 "\t\"notifications\":True,\n" +
+                                                 "\t\"timeron\":False,\n" +
+                                                 "\t\"hasstarttimer\":False,\n" +
+                                                 "\t\"hasendtimer\":False,\n" +
+                                                 "\t\"starttime\":\"9:30 AM\",\n" +
+                                                 "\t\"endtime\":\"6:30 PM\"" +
+                                                 "}");
+                         streamWriter.Close();
+                     }
+                     else
+                     {
+                         configfile.Close();
+                     }
+
+
+                 }
+                 catch (Exception e)
+                 {
+
+                     MessageBox.Show(e.Message);
+                 }
+             }
+             else
+             {
+                 if (File.Exists(Path.Combine(roming, "BoostbtnConfig\\config.json")))
+                 {
+
+                     filepath = Path.Combine(roming, "BoostbtnConfig");
+
+                     int len = 0;
+                     //int len = File.ReadAllText(filepath + "\\config.json").Length;
+                     if (len <= 0)
+                     {
+                         //configfile.Close();
+                         StreamWriter streamWriter = new StreamWriter(filepath + "\\config.json");
+
+                         streamWriter.WriteLine("{\n" +
+                                                 "\t\"init\":True,\n" +
+                                                 "\t\"configinit\":True,\n" +
+                                                 "\t\"helpinit\":True,\n" +
+                                                 "\t\"allwayclose\":false,\n" +
+                                                 "\t\"traymode\":false,\n" +
+                                                 "\t\"startintray\":False,\n" +
+                                                 "\t\"notifications\":True,\n" +
+                                                 "\t\"timeron\":False,\n" +
+                                                 "\t\"hasstarttimer\":False,\n" +
+                                                 "\t\"hasendtimer\":False,\n" +
+                                                 "\t\"starttime\":\"9:30 AM\",\n" +
+                                                 "\t\"endtime\":\"6:30 PM\"" +
+                                                 "}");
+                         streamWriter.Close();
+                     }
+                     else
+                     {
+                         //configfile.Close();
+                     }
+                     try
+                     {
+                         streamReader = new StreamReader(path: filepath);
+
+                         line = streamReader.ReadLine();
+
+                         while (line != null)
+                         {
+                             ////Console.WriteLine(line);
+                             if (!line.Contains("{") || !line.Contains("}"))
+                             {
+
+                                 jsonParser.Add(line);
+                             }
+
+                             line = streamReader.ReadLine();
+
+
+                         }
+
+
+                         streamReader.Close();
+
+
+                     }
+                     catch (Exception ex)
+                     {
+
+                         MessageBox.Show("Exception: " + ex.Message);
+                     }
+                     finally
+                     {
+
+                     }
+
+                 }
+
+                 jsonParser.parse();*/
+
+
+
+                    /*  if (!local.Contains("BoostMode"))
+            {
+                local = s;
+            }*/
+           /* if (File.Exists(new Uri(local).LocalPath.ToString()))
+            {
+                try
+                {
+                    //MessageBox.Show("sdkjfhakhdakjkskjsikfhskjlhkjslhfsdalfhsdakf");
+                    filepath = new Uri(local).LocalPath.ToString();
+
+                    int len = File.ReadAllLines(local).Length;
+
+
+
+                    streamReader = new StreamReader(path: local);
+
+                    line = streamReader.ReadLine();
+
+                    while (line != null)
+                    {
+                        ////Console.WriteLine(line);
+                        if (!line.Contains("{") || !line.Contains("}"))
+                        {
+
+                            jsonParser.Add(line);
+                            //MessageBox.Show(line);
+                        }
+
+                        line = streamReader.ReadLine();
+
+
+                    }
+
+
+                    streamReader.Close();
+
+
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Exception: " + ex.Message);
+                }
+                finally
+                {
+
+                }
+                //MessageBox.Show("skjahfkjhalkjhfdsaf");
+
+            }*/
+            //jsonParser.parse();
+
+            //jsonParser.parse();

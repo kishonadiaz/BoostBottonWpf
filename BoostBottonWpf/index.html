@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0016)http://localhost -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <script type="text/javascript">
+
+
+
+    </script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <header><div>This is Boost Button!</div></header>
+        <article>
+
+            <!-- Explain Button and what it does-->
+            <section>
+                <div>
+                    <span id="intro1">This Application allows you to turn on your Ultimate Performace plan in windows 10</span>
+                    <br />
+                    <span id="intro2">for more infomation click <a id="infolink" href="#">here</a></span>
+                    <br />
+
+                    <span id="warning">Warning!!!!!</span>
+                    <br />
+                    <span id="warning2">
+                        Ultimate Performance is a double edge sword it will not harm the short line of your computer,
+                        but in long term use, it can cause part degradation. Put it this way it like driving your car at its maximum speed,
+                        for as long as this mode is on everything is running at 100% of its full capacity can cause the computer to run Hotter!
+                    </span>
+                    <br />
+
+                </div>
+
+                <div>
+                    <span>To use this widget you can push the button in the center this button activtes </span>
+                    <span>Ultimate Performace and press it again to turn it off</span>
+                    <br/>
+                    <!--Place gif here-->
+                    <img class="imgresourcea" src="assets/BoostBtn BtnPress.gif" />
+                        
+                    
+
+                </div>
+
+                <div>
+                    <span>To move the widget grab the title bar and move it to where you would like</span>
+                    <!--Place Gif here-->
+                    <img class="imgresourcea"  src="assets/BoostBtn Move.gif" />
+
+                </div>
+                <div>
+                    <span>This widget auto hides into the tray you can turn off tray mode if you would like</span>
+                    <!--Place Gif here-->
+                    <img class="imgresourcea"  src="assets/BoostBtn TrayMode.gif" />
+                </div>
+
+
+            </section>
+            <!-- Explain Config page-->
+            <section>
+                <div>
+                    <span>To open setting You can change your settings here</span>
+                    <!--Place gif-->
+                    <img class="imgresourcea"  src="assets/BoostBtn Settings.gif" />
+                </div>
+
+            </section>
+            <!--Explain Notification buttons-->
+            <section>
+                <div>
+                    <span>In tray mode you can turn on and off Boost mode</span>
+                    <br />
+                    <!--Place gifs here-->
+                    <div>
+                        <img class="imgresourcea" src="assets/BoostBtn TrayBtnAction.gif" />
+                    </div>
+                </div>
+            </section>
+            <!--Ask if they would like to configure settings-->
+            <section>
+                
+                <div>
+                    <span>Do you want to change your settings?</span>
+                    <div>
+                        <button id="settingsbtn"> Settings </button> <button id="closedbtn"> Close </button>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </div>
+
+    <script type="text/javascript">
+
+
+
+        var assetsd = new String(window.external.getdir());
+
+        if (assetsd == "/" ){
+        
+            //alert("adfafd");
+            assetsd = "";
+        }    
+
+
+        var link = document.createElement("link");
+        link.href = assetsd + "main.css";
+        link.rel = "stylesheet";
+
+        var js = document.createElement("script");
+        js.src = assetsd+"main.js";
+
+        document.getElementsByTagName("head")[0].appendChild(link);
+
+        document.getElementsByTagName("body")[0].appendChild(js);
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+	"init":False,
+	"configinit":False,
+	"helpinit":False,
+	"allwayclose":True,
+	"traymode":True,
+	"startintray":True,
+	"notifications":True,
+	"timeron":True,
+	"hasstarttimer":True,
+	"hasendtimer":True,
+	"starttime": "1:30 AM",
+	"endtime": "6:30 PM"
+}

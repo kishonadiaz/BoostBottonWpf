@@ -1,0 +1,2 @@
+MainPackage=C:\Users\kishon diaz\source\repos\BoostBottonWpf\BoostMode\bin\x86\Release\BoostMode_1.0.8.0_x86.msix
+SymbolPackage=C:\Users\kishon diaz\source\repos\BoostBottonWpf\BoostMode\obj\x86\Release\Symbols\BoostMode_1.0.8.0_x86.appxsym

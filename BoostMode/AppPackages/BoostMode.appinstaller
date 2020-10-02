@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="file:///C:/Users/kishon diaz/source/repos/BoostBottonWpf/BoostMode/publish/BoostMode.appinstaller"
+	Version="1.0.8.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	<MainBundle
+		Name="BoostModev1"
+		Version="1.0.8.0"
+		Publisher="CN=kishon diaz"
+		Uri="file:///C:/Users/kishon diaz/source/repos/BoostBottonWpf/BoostMode/publish/BoostMode_1.0.8.0_Test/BoostMode_1.0.8.0_x86_x64.msixbundle" />
+	<UpdateSettings>
+		<OnLaunch
+			HoursBetweenUpdateChecks="0" />
+	</UpdateSettings>
+</AppInstaller>

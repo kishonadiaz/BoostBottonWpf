@@ -1,0 +1,48 @@
+﻿body
+{
+   
+}
+header{
+    font-size:3em;
+    position:relative;
+    width:100%;
+    background:lightblue;
+
+}
+header > div{
+    position:relative;
+    margin-left:250px;
+}
+section{
+    
+   
+}
+
+section > div{
+    background:lightgray;
+    margin: 20px;
+    text-align: center;
+}
+section > div > div {
+  
+    margin: 20px;
+    text-align: center;
+}
+
+#intro1{
+    
+}
+
+#intro2{
+  
+}
+
+#warning{
+    color:red;
+
+    font-size:1.5em;
+}
+
+#warning2{
+    font-weight:bolder;
+}

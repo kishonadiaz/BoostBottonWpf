@@ -1,0 +1,271 @@
+﻿<Window
+    x:Class="BoostBottonWpf.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:BoostBottonWpf"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="boostbtnWIndow"
+    Title="MainWindow"
+    Width="162.5"
+    Height="188.438"
+    AllowsTransparency="True"
+    Background="{x:Null}"
+    Closed="BoostBtnWin_Closed"
+    Closing="BoostBtnWin_Closing"
+    Icon="assets/black_hole_icon_149792.ico"
+    Loaded="BoostbtnWin_Load"
+    LostFocus="BoostbtnWin_LostFocus"
+    MouseEnter="BoostBtnWin_MouseEnter"
+    MouseLeave="BoostBtnWin_MouseLeave"
+    MouseMove="BoostBtnWin_MouseMove"
+    SizeChanged="BoostbtnWin_SizeChange"
+    WindowStyle="None"
+    mc:Ignorable="d">
+
+
+    <Window.Resources>
+
+        <ImageBrush
+            x:Key="Boostbtnon"
+            ImageSource="assets/powerbtnon.png"
+            Stretch="None" />
+        <ImageBrush
+            x:Key="Boostbtnoff"
+            ImageSource="assets/powerbtnoff.png"
+            Stretch="None" />
+        <ImageBrush
+            x:Key="Boostbtnhover"
+            ImageSource="assets/powerbtnhover.png"
+            Stretch="Uniform" />
+
+        <BlurEffect x:Key="TitleblurReset" Radius="0" />
+        <BlurEffect x:Key="TitleblurEffect" Radius="5" />
+
+    </Window.Resources>
+
+
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Button
+            x:Name="BoostBtn"
+            Margin="10,46,12,10"
+            BorderBrush="{x:Null}"
+            BorderThickness="0"
+            Click="BoostBtn_Click"
+            IsManipulationEnabled="True"
+            MouseEnter="BoostBtn_MouseEnter"
+            MouseLeave="BoostBtn_MouseLeave"
+            Style="{DynamicResource ButtonStyle1}">
+            <Button.Resources>
+                <Style x:Key="FocusVisual">
+                    <Setter Property="Control.Template">
+                        <Setter.Value>
+                            <ControlTemplate>
+                                <Rectangle
+                                    Margin="2"
+                                    SnapsToDevicePixels="true"
+                                    Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"
+                                    StrokeDashArray="1 2"
+                                    StrokeThickness="1" />
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+                <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD" />
+                <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070" />
+                <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD" />
+                <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1" />
+                <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6" />
+                <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B" />
+                <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4" />
+                <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5" />
+                <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383" />
+                <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+                    <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}" />
+                    <Setter Property="Background" Value="{StaticResource Button.Static.Background}" />
+                    <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}" />
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
+                    <Setter Property="BorderThickness" Value="1" />
+                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                    <Setter Property="VerticalContentAlignment" Value="Center" />
+                    <Setter Property="Padding" Value="1" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border
+                                    x:Name="border"
+                                    Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    SnapsToDevicePixels="true">
+                                    <ContentPresenter
+                                        x:Name="contentPresenter"
+                                        Margin="{TemplateBinding Padding}"
+                                        HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                        VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                        Focusable="False"
+                                        RecognizesAccessKey="True"
+                                        SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsDefaulted" Value="true">
+                                        <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />
+                                    </Trigger>
+
+                                    <Trigger Property="IsPressed" Value="true">
+                                        <Setter TargetName="border" Property="Background" Value="{StaticResource Boostbtnon}" />
+                                        <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource Button.Pressed.Border}" />
+                                    </Trigger>
+
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <ImageBrush ImageSource="assets/powerbtnoff.png" Stretch="None" />
+            </Button.Background>
+        </Button>
+        <DockPanel
+            Width="162"
+            Height="33"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            LastChildFill="False" />
+        <CheckBox
+            x:Name="Button_pressedCheck"
+            Width="19"
+            Height="18"
+            Margin="0,31,-36,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Background="{x:Null}"
+            BorderBrush="{x:Null}"
+            Checked="Button_pressedCheck_Checked"
+            Content="CheckBox"
+            Foreground="{x:Null}" />
+        <CheckBox
+            x:Name="moving"
+            Width="15"
+            Height="16"
+            Margin="179,10,-32,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="CheckBox"
+            Visibility="Hidden" />
+        <WrapPanel
+            x:Name="TitleBar"
+            Width="162"
+            Height="33"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="White"
+            MouseDown="TitleBar_MouseDown"
+            MouseEnter="TitleBar_MouseEnter"
+            MouseLeave="TitleBar_MouseLeave"
+            MouseMove="TitleBar_MouseMove"
+            MouseUp="TitleBar_MouseUp"
+            Opacity=".4">
+            <WrapPanel.Effect>
+                <BlurEffect />
+            </WrapPanel.Effect>
+            <Label
+                Width="91"
+                Height="33"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="Boost Mode"
+                Cursor="Arrow"
+                FontFamily="Calibri"
+                FontSize="16"
+                FontWeight="Bold" />
+            <Button
+                Width="34"
+                Height="33"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="{x:Null}"
+                BorderBrush="{x:Null}"
+                BorderThickness="0,1"
+                Click="minamize_Click"
+                Content="-"
+                FontSize="20"
+                FontStretch="UltraExpanded"
+                FontWeight="ExtraBold"
+                IsCancel="True"
+                RenderTransformOrigin="0.017,0.455"
+                ScrollViewer.CanContentScroll="True"
+                UseLayoutRounding="True" />
+            <Button
+                Width="32"
+                Height="33"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="{x:Null}"
+                BorderBrush="{x:Null}"
+                Click="closeBtn_Click"
+                Content="X"
+                FontSize="16"
+                FontWeight="Bold"
+                Foreground="Red"
+                RenderTransformOrigin="-0.371,0.312" />
+
+        </WrapPanel>
+        <WrapPanel
+            x:Name="Setting_BtnPanel"
+            Width="28"
+            Height="30"
+            Margin="134,33,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="#FF0C1A59"
+            Opacity="0.2"
+            OpacityMask="White">
+            <Button
+                x:Name="settingbtn"
+                Width="28"
+                Height="30"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="White"
+                BorderBrush="{x:Null}"
+                BorderThickness="0,0,0,1"
+                Click="Settingbtn_Click"
+                Content="Button"
+                Foreground="{x:Null}"
+                MouseEnter="Settingbtn_MouseEnter"
+                MouseLeave="Settingbtn_MouseLeave">
+                <Button.OpacityMask>
+                    <ImageBrush ImageSource="assets/4137161-building-construction-industry-setting_114090.png" Stretch="Uniform" />
+                </Button.OpacityMask>
+
+                <Button.Effect>
+                    <BlurEffect />
+                </Button.Effect>
+            </Button>
+        </WrapPanel>
+        <Button
+            x:Name="Helpbtn"
+            Width="23"
+            Height="20"
+            Margin="0,163,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            BorderBrush="{x:Null}"
+            Click="Helpbtn_Click"
+            Content=""
+            Foreground="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="assets/information_info_1565.png" Stretch="Uniform" />
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

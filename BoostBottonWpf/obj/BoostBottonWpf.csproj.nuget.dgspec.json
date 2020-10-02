@@ -1,0 +1,94 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\kishon diaz\\source\\repos\\BoostBottonWpf\\BoostBottonWpf\\BoostBottonWpf.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\kishon diaz\\source\\repos\\BoostBottonWpf\\BoostBottonWpf\\BoostBottonWpf.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kishon diaz\\source\\repos\\BoostBottonWpf\\BoostBottonWpf\\BoostBottonWpf.csproj",
+        "projectName": "BoostBottonWpf",
+        "projectPath": "C:\\Users\\kishon diaz\\source\\repos\\BoostBottonWpf\\BoostBottonWpf\\BoostBottonWpf.csproj",
+        "packagesPath": "C:\\Users\\kishon diaz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kishon diaz\\source\\repos\\BoostBottonWpf\\BoostBottonWpf\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kishon diaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Extended.Wpf.Toolkit": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Microsoft.PowerShell.5.ReferenceAssemblies": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.Toolkit.Uwp.Notifications": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "Microsoft.Windows.SDK.Contracts": {
+              "target": "Package",
+              "version": "[10.0.19041.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "QueryString.NET": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "WiX.Toolset": {
+              "target": "Package",
+              "version": "[3.9.1208, )"
+            },
+            "WixSharp": {
+              "target": "Package",
+              "version": "[1.14.8, )"
+            }
+          },
+          "imports": [
+            "uap10.0.19041"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
